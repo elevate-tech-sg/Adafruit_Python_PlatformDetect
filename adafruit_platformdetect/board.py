@@ -404,6 +404,8 @@ class Board:
             board = boards.PINEPHONE
         elif "sopine" in board_value.lower():
             board = boards.SOPINE
+        elif "Pine64 Rock64" in board_value.lower():
+            board = boards.PINE64
         return board
 
     # pylint: disable=no-self-use
