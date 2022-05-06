@@ -601,6 +601,8 @@ class Board:
     @property
     def any_pine64_board(self) -> bool:
         """Check whether the current board is any Pine64 device."""
+        print("pinecheck")
+        print (self.id)
         return self.id in boards._PINE64_DEV_IDS
 
     @property
